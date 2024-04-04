@@ -5,7 +5,8 @@ const UserList = () => {
     const { users }=useContext(MyContext)
   return (
     <>
-      <h1>UserList</h1>
+
+      <h1 style={{backgroundColor:"lightgray",color:"gray"}}>UserList</h1>
       {
         users.map(user=><User key={user.id} user={user}/>)
       }

@@ -9,10 +9,12 @@ const User = ({ user }) => {
   return (
     <>
       <div className="User">
-        <h1>{user.name}</h1>
-        <h2>{user.age}</h2>
-        <h3>{user.bio}</h3>
+        <div style={{textAlign:"center",border:"1px solid lightgray",padding:"1rem",borderRadius:"10px"}}>
+        <h1>Name: {user.name}</h1>
+        <h2>Age: {user.age}</h2>
+        <h3>Bio: {user.bio}</h3>
         <button className="btn" onClick={handleRemoveuser}>Delete user</button>
+        </div>
       </div>
     </>
   );

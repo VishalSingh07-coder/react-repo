@@ -11,3 +11,62 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.Name{
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+.Name:focus{
+  border: 2px solid blue;
+}
+.age{
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.age:focus{
+  border: 2px solid blue;
+}
+.bio{
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 6px;
+  outline: none;
+}
+.bio:focus{
+  border:2px solid blue
+}
+.inputDiv{
+  display: flex;
+  flex-direction: row;
+}
+.btn1{
+  border:  none;
+  outline: none;
+  background-color:blue;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn{
+  border:  none;
+  outline: none;
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+.User{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
