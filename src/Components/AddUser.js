@@ -9,7 +9,6 @@ const AddUser = () => {
   const [bio, setBio] = useState("");
   const[err,setError]=useState(false);
   const handleAddUser = () => {
-    // const sentenceRegex=/^(?=[\p{L}0-9])[\p{L}\p{N}_@,.&$%#\s-]{1,50}$/u;
     if(name==="" || age==="" || bio===""){
         setError(true);
     }
@@ -17,14 +16,11 @@ const AddUser = () => {
     setError(false);
     const user = { id: Math.random(), name, age, bio };
     dispatchUserEvent("ADD USER", { newUser: user });
-    handleClear();
-    }
-  };
-  const handleClear=()=>{
     setName("");
     setAge("");
     setBio("");
-  }
+    }
+  };
   return (
     <>
     <div style={{display:"flex",flexDirection:"column",alignItems:"center",justifyContent:"center"}}>
@@ -66,11 +62,6 @@ const AddUser = () => {
             <div>
           <button className="btn1" onClick={handleAddUser}>
             Add user
-          </button>
-          </div>
-          <div>
-          <button className="btn1" onClick={handleClear}>
-            Clear
           </button>
           </div>
         </div>
